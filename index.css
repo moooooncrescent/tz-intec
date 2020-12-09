@@ -1,6 +1,6 @@
 @font-face {
   font-family: Roboto-bold;
-  src: url(/src/fonts/Roboto-Bold.ttf); 
+  src: url(/src/fonts/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: Montserrat;
@@ -15,65 +15,58 @@
   src: url(/src/fonts/Roboto-Regular.ttf);
 }
 body {
+  display: grid;
+  grid-template-columns: auto 1900px auto;
   margin: 0;
 }
-.headerRectangle {
-  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-  width: 1900px;
-  height: 645px;
-  background-color: #ffdea8;
-  padding: 0;
-}
-.header {
+header {
   font: 1em Montserrat-bold;
   font-weight: bold;
-    position: relative;
-    top: 5px;
-    width: 1450px;
-    height: 100px;
-    margin-left: 350px;
-  }
-
-  .headerButton {
-    display: inline-block;
-    position: relative;
-    bottom: 20px;
-    left: 20px;
-    height: 10px;
-    outline: none;
-    border: 0;
-    background: transparent;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 0 20px 0;
-  font:  Roboto;
-
-  }
-  .headerPhone {
-    display: inline-block;
-    position: relative;
-    bottom: 35px;
-    height: 10px;
-    outline: none;
-    border: 0;
-    background: transparent;
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: 80px;
-    flex-wrap: wrap;
-  }
-  .headerCallback {
-      position: relative;
-      outline: none;
-      border: 0;
-      background: transparent;
-      color: gray;
-      bottom: 35px;
-      margin-left: 1150px;
-      width: 105px;
-      font-size: 12px;
-      border-bottom: 1px dashed gray;
-  }
+  position: relative;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+  background: #ffdea8;
+  padding: 0;
+}
+.headerBlock1 {
+  padding-top: 10px;
+  margin: 0 350px 0;
+}
+.headerLink {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: black;
+  bottom: 20px;
+  left: 20px;
+  height: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 20px 0;
+  font: Roboto;
+}
+.headerPhone {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: black;
+  bottom: 35px;
+  left: 20px;
+  height: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 20px 0;
+  font: Roboto;
+}
+.headerCallback {
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  color: gray;
+  bottom: 35px;
+  left: 1050px;
+  font-size: 12px;
+  border-bottom: 1px dashed gray;
+}
 .headerPhoneImg2 {
   position: relative;
   left: 5px;
@@ -82,18 +75,14 @@ body {
   position: relative;
   right: 5px;
 }
-.body {
-  width: 1900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container1 {
+
+.headerBlock2 {
   width: 1500px;
   height: 545px;
   margin-left: 300px;
   margin-right: 300px;
 }
-.container1text {
+.headerBlock2text {
   font: 1em Roboto-bold;
   position: relative;
   width: 600px;
@@ -102,50 +91,48 @@ body {
   left: 50px;
   opacity: 0.7;
 }
-.container1text1, .container1text2, .container1text3 {
+.headerBlock2text1,
+.headerBlock2text2,
+.headerBlock2text3 {
   position: relative;
   margin-bottom: 15px;
 }
-.container1img1 {
+.headerBlock2img1 {
   position: relative;
   bottom: 190px;
   left: 500px;
-  height: 100px;
   width: 900px;
   height: auto;
 }
 
-.container2 {
-height: 1900px;
-font: 1em Roboto;
+.container1 {
+  height: 1950px;
+  font: 1em Roboto;
 }
 
-.container2title {
-text-align: center;
+.container1title {
+  text-align: center;
   font-size: 36px;
   font-weight: bold;
-  padding-top: 100px ;
-  padding-bottom: 70px ;
+  padding-top: 100px;
+  padding-bottom: 70px;
 }
 
-
-.vector1 {
+.container1vector1 {
   display: inline-block;
   position: relative;
   top: 19px;
 }
-.container2img1 {
+.container1img1 {
   display: inline-block;
   position: relative;
   top: 19px;
   right: 5px;
-
-  
 }
-.container2title1 {
+.container1title1 {
   font-size: 22px;
 }
-.textblock1 {
+.container1textblock1 {
   display: inline-block;
   width: 600px;
   position: relative;
@@ -153,10 +140,10 @@ text-align: center;
   left: 100px;
   font-size: 18px;
 }
-.showMore1 {
+.container1showMore1 {
   width: 170px;
   height: 40px;
-  margin:  15px 430px 0 ;
+  margin: 15px 430px 0;
   outline: none;
   border: 2px solid black;
   border-radius: 5px;
@@ -165,24 +152,23 @@ text-align: center;
   font-weight: bold;
   font-size: 13px;
 }
-.showMore1:hover {
+.container1showMore1:hover {
   background-color: #dc911b;
   color: white;
 }
 
-.vector2 {
+.container1vector2 {
   display: inline-block;
   position: relative;
   left: 95px;
 }
-.container2img2 {
+.container1img2 {
   display: inline-block;
-
 }
-.container2title2 {
+.container1title2 {
   font-size: 22px;
 }
-.textblock2 {
+.container1textblock2 {
   display: inline-block;
   width: 600px;
   position: relative;
@@ -190,10 +176,10 @@ text-align: center;
   left: 450px;
   bottom: 50px;
 }
-.showMore2 {
+.container1showMore2 {
   width: 170px;
   height: 40px;
-  margin:  15px 430px 0 ;
+  margin: 15px 430px 0;
   outline: none;
   border: 2px solid black;
   border-radius: 5px;
@@ -202,38 +188,38 @@ text-align: center;
   font-weight: bold;
   font-size: 13px;
 }
-.showMore2:hover {
+.container1showMore2:hover {
   background-color: #dc911b;
   color: white;
 }
 
-.vector3 {
+.container1vector3 {
   display: inline-block;
   position: relative;
   left: 728px;
   bottom: 347px;
 }
-.container2img3 {
+.container1img3 {
   display: inline-block;
   position: relative;
   top: 82px;
   right: 260px;
 }
-.container2title3 {
+.container1title3 {
   font-size: 22px;
 }
-.textblock3 {
+.container1textblock3 {
   display: inline-block;
   width: 600px;
   position: relative;
   font-size: 18px;
   left: 850px;
-  top:50px;
+  top: 50px;
 }
-.showMore3 {
+.container1showMore3 {
   width: 170px;
   height: 40px;
-  margin:  15px 430px 0 ;
+  margin: 15px 430px 0;
   outline: none;
   border: 2px solid black;
   border-radius: 5px;
@@ -242,30 +228,29 @@ text-align: center;
   font-weight: bold;
   font-size: 13px;
 }
-.showMore3:hover {
+.container1showMore3:hover {
   background-color: #dc911b;
   color: white;
 }
 
-.vector4 {
+.container1vector4 {
   display: inline-block;
   position: relative;
   bottom: 427px;
   left: 112px;
   z-index: 2;
-
 }
-.container2img4 {
+.container1img4 {
   display: inline-block;
   position: relative;
   bottom: 907px;
   left: 1110px;
   z-index: 1;
 }
-.container2title4 {
+.container1title4 {
   font-size: 22px;
 }
-.textblock4 {
+.container1textblock4 {
   display: inline-block;
   width: 600px;
   position: relative;
@@ -273,10 +258,10 @@ text-align: center;
   bottom: 600px;
   right: 750px;
 }
-.showMore4 {
+.container1showMore4 {
   width: 170px;
   height: 40px;
-  margin:  15px 430px 0 ;
+  margin: 15px 430px 0;
   outline: none;
   border: 2px solid black;
   border-radius: 5px;
@@ -285,81 +270,78 @@ text-align: center;
   font-weight: bold;
   font-size: 13px;
 }
-.showMore4:hover {
+.container1showMore4:hover {
   background-color: #dc911b;
   color: white;
 }
-.vector5 {
+.container1vector5 {
   display: inline-block;
   position: relative;
   bottom: 717px;
   left: 1100px;
   z-index: 2;
-
 }
 
-.container3 {
-position: relative;
-top: 70px;
-  background-color: #3E3E3D;
+.container2 {
+  position: relative;
+  top: 70px;
+  background-color: #3e3e3d;
   height: 800px;
   font-family: Roboto;
   font-weight: bold;
 }
-.container3title {
-  padding-left: 560px ;
-  padding-top: 130px ;
+.container2title {
+  padding-left: 560px;
+  padding-top: 130px;
   font-size: 36px;
   color: white;
-
 }
-.container3img1 {
+.container2img1 {
   position: relative;
   left: 270px;
   bottom: 100px;
-
 }
-.container3img2 {
+.container2img2 {
   position: relative;
   left: 310px;
   bottom: 100px;
 }
-.container3img3 {
+.container2img3 {
   position: relative;
   left: 355px;
   bottom: 100px;
 }
-.container3img4 {
+.container2img4 {
   position: relative;
   left: 300px;
   bottom: 100px;
 }
-.container3button1 {
+.container2button1 {
   position: relative;
   right: 690px;
   width: 35px;
   bottom: 20px;
 }
-.container3button2 {
+.container2button2 {
   position: relative;
-  background: #C4C4C4;
+  background: #c4c4c4;
   right: 694px;
   width: 35px;
   bottom: 20px;
 }
-.container3showAll {
+.container2showAll {
   position: relative;
-      outline: none;
-      border: 0;
-      background: transparent;
-      font-weight: bold;
-      font-size: 15px;
-      right: 450px;
-      bottom: 20px;
+  outline: none;
+  border: 0;
+  background: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  right: 450px;
+  bottom: 20px;
   color: white;
 }
 
-.container4 {
+.container3 {
   position: relative;
   top: 100px;
   width: 1900px;
@@ -367,27 +349,28 @@ top: 70px;
   font-family: Roboto;
 }
 
-.container4title {
+.container3title {
   position: relative;
   margin-left: 460px;
   font-size: 30px;
   top: 70px;
   font-weight: bold;
 }
-.container4block1, .container4block2 {
+.container3block1,
+.container3block2 {
   position: relative;
-  top: 100px
+  top: 100px;
 }
-.container4block1img {
+.container3block1img {
   position: relative;
   width: 556px;
   height: 310px;
-  background: #DC911B;
+  background: #dc911b;
   margin-left: 650px;
   z-index: 1;
 }
 
-.container4block1title {
+.container3block1title {
   font-size: 34px;
   position: relative;
   top: 200px;
@@ -395,26 +378,26 @@ top: 70px;
   z-index: 2;
   font-weight: bold;
 }
-.container4block1rectangle {
+.container3block1rectangle {
   position: relative;
   margin-left: 650px;
   width: 550px;
-  height: 310px ;
-  background-color: #DC911B;
+  height: 310px;
+  background-color: #dc911b;
 }
-.container4block1text{
+.container3block1text {
   font-size: 17px;
   position: relative;
   margin-left: 1270px;
   width: 240px;
   bottom: 140px;
 }
-.container4block1button1 {
+.container3block1button1 {
   position: relative;
   margin-left: 1450px;
   bottom: 97px;
 }
-.container4block1data {
+.container3block1data {
   position: relative;
   margin-left: 460px;
   top: 300px;
@@ -423,16 +406,15 @@ top: 70px;
   font-size: 14px;
 }
 
-.container4block2img {
+.container3block2img {
   position: relative;
   bottom: 100px;
   width: 550px;
   height: 310px;
   margin-left: 650px;
   z-index: 1;
-
 }
-.container4block2title {
+.container3block2title {
   font-size: 34px;
   position: relative;
   top: 80px;
@@ -440,14 +422,14 @@ top: 70px;
   z-index: 2;
   font-weight: bold;
 }
-.container4block2text{
+.container3block2text {
   font-size: 17px;
   position: relative;
   margin-left: 1270px;
   width: 240px;
   bottom: 240px;
 }
-.container4block2data{
+.container3block2data {
   position: relative;
   margin-left: 460px;
   top: 200px;
@@ -455,28 +437,27 @@ top: 70px;
   font-weight: bold;
   font-size: 14px;
 }
-.container4block2button1 {
+.container3block2button1 {
   position: relative;
   margin-left: 1450px;
   bottom: 200px;
 }
-.container4allProj {
+.container3allProj {
   position: relative;
   margin-left: 1370px;
   bottom: 140px;
   font-weight: bold;
-
 }
-.container4allProjPic {
+.container3allProjPic {
   position: relative;
   top: 4px;
   margin-left: 5px;
 }
-.container5 {
+.container4 {
   height: 500px;
   font-family: Roboto;
 }
-.container5title {
+.container4title {
   position: relative;
   font-weight: bold;
   width: 200px;
@@ -484,38 +465,40 @@ top: 70px;
   right: 250px;
   top: 100px;
 }
-.container5img {
+.container4img {
   position: relative;
   right: 220px;
   top: 105px;
 }
-.container5block1title, .container5block2title, .container5block3title {
+.container4block1title,
+.container4block2title,
+.container4block3title {
   font-weight: bold;
   position: relative;
   bottom: 20px;
 }
-.container5block1pt1  {
+.container4block1pt1 {
   display: inline-block;
   position: relative;
   left: 600px;
   width: 220px;
-  font-size: 16px;  
+  font-size: 16px;
 }
-.container5block1pt2 {
+.container4block1pt2 {
   display: inline-block;
   position: relative;
-  left: 400px; 
+  left: 400px;
   width: 250px;
   font-size: 16px;
   bottom: 110px;
 }
-.container5grey {
+.container4grey {
   position: relative;
   width: 920px;
   height: 433px;
-  background: #EDEEEF;
+  background: #edeeef;
 }
-.container5block2 {
+.container4block2 {
   display: inline-block;
   position: relative;
   left: 980px;
@@ -523,7 +506,7 @@ top: 70px;
   font-size: 16px;
   bottom: 320px;
 }
-.container5block3 {
+.container4block3 {
   display: inline-block;
   position: relative;
   padding-left: 50px;
@@ -534,14 +517,18 @@ top: 70px;
   bottom: 320px;
   border-left: 2px solid lightgray;
 }
-.container5block1data, .container5block2data, .container5block3data {
+.container4block1data,
+.container4block2data,
+.container4block3data {
   color: gray;
-  padding-bottom: 20px ;
+  padding-bottom: 20px;
 }
-.container5block1text, .container5block2text, .container5block3text {
-  padding-bottom: 20px ;
+.container4block1text,
+.container4block2text,
+.container4block3text {
+  padding-bottom: 20px;
 }
-.container5allNews {
+.container4allNews {
   position: relative;
   top: 150px;
   left: 50px;
@@ -551,104 +538,107 @@ top: 70px;
   font-weight: bold;
   font-size: 18px;
 }
-.container6 {
+.container5 {
   position: relative;
   font-family: Roboto;
   height: 300px;
   top: 150px;
 }
-.container6block1 {
- position: relative;
- width: 1400px;
- height: 450px;
- left: 450px;
- z-index: 2;
-
+.container5block1 {
+  position: relative;
+  width: 1400px;
+  height: 450px;
+  left: 450px;
+  z-index: 2;
 }
-.container6vector1 {
- position: relative;
- bottom: 450px;
- z-index: 1;
+.container5vector1 {
+  position: relative;
+  bottom: 450px;
+  z-index: 1;
 }
-.container6block1yellow {
- display: inline-block;
- position: relative;
- background: #FFE0B0;
- width: 620px;
- height: 200px;
- bottom: 160px;
- right: 133px;
+.container5block1yellow {
+  display: inline-block;
+  position: relative;
+  background: #ffe0b0;
+  width: 620px;
+  height: 200px;
+  bottom: 160px;
+  right: 133px;
 }
-.container6block1img1 {
- display: inline-block;
- position: relative;
-
+.container5block1img1 {
+  display: inline-block;
+  position: relative;
 }
-.container6block1img2 {
- display: inline-block;
- position: relative;
- right: 200px;
+.container5block1img2 {
+  display: inline-block;
+  position: relative;
+  right: 200px;
 }
-.container6btn {
- position: relative;
- width: 170px;
- height: 40px;
- right: 660px;
- bottom: 20px;
- outline: none;
- border: 1px solid black;
- border-radius: 5px;
- border-color: #dc911b;
- background: transparent;
- font-weight: bold;
- font-size: 13px;
+.container5btn {
+  position: relative;
+  width: 170px;
+  height: 40px;
+  right: 660px;
+  bottom: 20px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-color: #dc911b;
+  background: transparent;
+  font-weight: bold;
+  font-size: 13px;
 }
-.container6btn:hover {
- background-color: #dc911b;
- color: white;
+.container5btn:hover {
+  background-color: #dc911b;
+  color: white;
 }
-.container6title, .container6text {
- position: relative;
- text-align: center;
-
+.container5title,
+.container5text {
+  position: relative;
+  text-align: center;
 }
-.container6text {
+.container5text {
   top: 40px;
   font-size: 14px;
 }
-.container6title {
+.container5title {
   top: 30px;
   font-weight: bold;
- font-size: 23px;
+  font-size: 23px;
 }
 
-.container6label1, .container6label2 {
- border-bottom: 1px solid #DC911B ;
- display: inline-block;
- position: relative;
- top: 70px;
- font-size: 12px;
- width: 120px;
+.container5label1,
+.container5label2 {
+  border-bottom: 1px solid #dc911b;
+  display: inline-block;
+  position: relative;
+  top: 70px;
+  font-size: 12px;
+  width: 120px;
 }
-.container6input1, .container6input2  {
- outline: none;
- border: 0;
- background: transparent;
- font-weight: bold;
+.container5input1,
+.container5input2 {
+  outline: none;
+  border: 0;
+  background: transparent;
+  font-weight: bold;
 }
-.container6label1 {
- left: 150px;
+.container5label1 {
+  left: 150px;
 }
-.container6label2 {
- left: 250px;
+.container5label2 {
+  left: 250px;
 }
-.container7 {
+.container6 {
   position: relative;
   height: 700px;
   top: 150px;
   font-family: Roboto;
 }
-.container7article1, .container7article2, .container7article3, .container7article4 {
+.container6article1,
+.container6article2,
+.container6article3,
+.container6article4 {
   display: inline-block;
   position: relative;
   top: 230px;
@@ -656,7 +646,7 @@ top: 70px;
   width: 240px;
   margin: 0 40px 0;
 }
-.container7title {
+.container6title {
   position: relative;
   font-size: 36px;
   font-weight: bold;
@@ -664,19 +654,28 @@ top: 70px;
   top: 150px;
 }
 
-.container7article1date, .container7article2date, .container7article3date, .container7article4date {
+.container6article1date,
+.container6article2date,
+.container6article3date,
+.container6article4date {
   margin: 10px 0 10px;
   font-size: 12px;
   color: lightgray;
 }
-.container7article1title, .container7article2title, .container7article3title, .container7article4title {
- font-weight: bold;
- font-size: 16px;
+.container6article1title,
+.container6article2title,
+.container6article3title,
+.container6article4title {
+  font-weight: bold;
+  font-size: 16px;
 }
-.container7article1preview, .container7article2preview, .container7article3preview, .container7article4preview {
+.container6article1preview,
+.container6article2preview,
+.container6article3preview,
+.container6article4preview {
   font-size: 14px;
 }
-.container7allArticles {
+.container6allArticles {
   position: relative;
   font-size: 18px;
   outline: none;
@@ -687,41 +686,43 @@ top: 70px;
   top: 320px;
 }
 
-.container8 {
+.container7 {
   position: relative;
   height: 800px;
-  background: #3E3E3D;
+  background: #3e3e3d;
   font-family: Roboto;
 }
-.container8title {
+.container7title {
   position: relative;
   color: white;
   margin-left: 530px;
   top: 120px;
   font-size: 35px;
 }
-.container8cert1, .container8cert2, .container8cert3 {
+.container7cert1,
+.container7cert2,
+.container7cert3 {
   display: inline-block;
   position: relative;
   bottom: 200px;
   left: 210px;
   margin-left: 40px;
 }
-.container8img1 {
+.container7img1 {
   position: relative;
   left: 200px;
 }
-.container8btn1 {
+.container7btn1 {
   position: relative;
   right: 1150px;
   bottom: 120px;
 }
-.container8btn2 {
+.container7btn2 {
   position: relative;
   right: 1154px;
   bottom: 120px;
 }
-.container8showAll {
+.container7showAll {
   position: relative;
   font-weight: bold;
   color: white;
@@ -733,27 +734,44 @@ top: 70px;
   font-size: 16px;
   right: 700px;
 }
-.container9 {
+.container8 {
   position: relative;
   font-family: Roboto;
   height: 550px;
-
+  padding-top: 70px;
+  padding-left: 314px;
+  padding-right: 314px;
 }
-.container9title {
+.container8title {
   position: relative;
-  top: 50px;
-  margin-left: 580px;
+  margin-left: 200px;
+  padding-bottom: 70px;
   font-size: 36px;
   font-weight: bold;
 }
-.container9table {
-  position: relative;
-  top: 120px;
-  left: 340px;
+.container8clients {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
 }
-.footer {
+.container8cli1,
+.container8cli2,
+.container8cli3,
+.container8cli4,
+.container8cli5,
+.container8cli6,
+.container8cli7,
+.container8cli8 {
+  height: 60px;
+  padding: 50px;
+  width: auto;
+  border: 1px solid rgb(243, 243, 243);
+}
+
+footer {
   font-family: Roboto;
-  background: #3E3E3D;
+  background: #3e3e3d;
   height: 400px;
   width: 1900px;
 }
@@ -771,7 +789,9 @@ top: 70px;
   height: 203px;
   left: 100px;
 }
-.footerAbout, .footerContacts, .footerCatalog {
+.footerAbout,
+.footerContacts,
+.footerCatalog {
   position: relative;
   top: 20px;
   left: 240px;
@@ -783,26 +803,29 @@ top: 70px;
 }
 .footerSearchBtn {
   position: relative;
-  background: #3E3E3D ;
+  background: #3e3e3d;
   width: 100%;
   border: 1px solid white;
   border-radius: 4px;
   bottom: 25px;
-
 }
 .footerSearch {
   position: relative;
   width: 380px;
   height: 40px;
   border: 0;
-  background: #3E3E3D;
+  background: #3e3e3d;
 }
 .footerSearchIco {
   position: relative;
   top: 5px;
 }
 
-.footerNews, .footerArticles, .footerCert, .footerObjects, .footerStorage {
+.footerNews,
+.footerArticles,
+.footerCert,
+.footerObjects,
+.footerStorage {
   display: block;
   position: relative;
   top: 35px;
@@ -813,7 +836,8 @@ top: 70px;
   font-weight: lighter;
   color: gray;
 }
-.footerPrices, .footerSales {
+.footerPrices,
+.footerSales {
   display: block;
   position: relative;
   bottom: 85px;
@@ -844,36 +868,37 @@ top: 70px;
 }
 .footerMail {
   position: relative;
-  top:20px;
+  top: 20px;
   left: 20px;
   color: white;
-  font-weight: lighter;  
-  font-size: 14px;  
+  font-weight: lighter;
+  font-size: 14px;
 }
 .footerGeo {
   position: relative;
- position: relative;
+  position: relative;
   top: 45px;
   left: 20px;
   color: white;
-  font-weight: lighter;  
-  font-size: 14px;  
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 .footerPhone {
-position: relative;
-left: 280px;
-font-weight: bold;
-color: white;
-font-size: 18px;
-bottom: 30px;
+  position: relative;
+  left: 280px;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  bottom: 30px;
 }
 .footerCallBtn {
   position: relative;
   left: 280px;
   bottom: 10px;
 }
-.footerMailImg, .footerGeoImg {
+.footerMailImg,
+.footerGeoImg {
   position: relative;
   right: 20px;
 }
